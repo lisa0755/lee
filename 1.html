@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	 <head>
+	 	 <meta charset="UTF-8">
+	 	 <title>练习9</title>
+	 </head>
+     
+     <body>
+         <div id="shopping" style="border:1px solid red; background-color: gray; width: 100px; height: 100px;">
+             <a>nihao</a>
+         </div>
+
+         <div id="shop-info" style="border:1px solid red; background-color: yellow;  width:0; height:0; overflow: hidden;transition: all 1s;">
+                                         <ul class="nav navbar-nav">
+                                             <li><a href="../product-list/mall-list.html">首页</a></li>
+                                             <li><a href="../product-list/mall-list.html">博客</a></li>
+                                             <li><a href="../product-list/mall-list.html">品牌理念</a></li>
+                                              
+                                         </ul>
+      
+                                     </div>
+         
+
+         <script type="text/javascript" src="jquery-1.12.3.min.js"></script>
+         <script type="text/javascript">
+
+
+              $(document).ready(function(){
+                 var timeoutid;
+                 $("#shopping").mouseover(function(){
+                     $("#shop-info").show();
+                     $("#shop-info").height(100).width(100);
+
+                 }).mouseout(function(){
+                     $("#shop-info").hide();
+                     $("#shop-info").height(0);
+                 })
+
+
+              })
+         
+
+         </script>
+     </body>
+ </html>
